@@ -32,10 +32,10 @@ class ConfiguratorPanel(bpy.types.Panel):
                 
                 row = box.row(align=True)
                 
-                op = row.operator("collection.cycle_items", 
+                op_reverse = row.operator("collection.cycle_items", 
                     text="", icon="PLAY_REVERSE")
-                op.collection_name = col.name
-                op.go_back = True
+                op_reverse.collection_name = col.name
+                op_reverse.go_back = True
                 
                 # Synliga objektet
                 obj = next(o for o in col.objects if o.hide_get() == False)
@@ -43,10 +43,12 @@ class ConfiguratorPanel(bpy.types.Panel):
                 op = row.operator("collection.cycle_items",
                     text=obj.name)
                 op.collection_name = col.name
+                op.go_back = False
                 
                 op = row.operator("collection.cycle_items",
                     text="", icon="PLAY")
                 op.collection_name = col.name
+                op.go_back = False
 
 
 # ——————————————————————————————————————————————————————————————————————
