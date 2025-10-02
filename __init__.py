@@ -7,7 +7,6 @@ bl_info = {
     "location": "3D Viewport > N Panel > Examples",
     # "doc_url": "https://github.com/{username}/{repo-name}",
     # "tracker_url": "https://github.com/{username}/{repo-name}/issues",
-    # "warning": "Pre-Release",
     "support": "COMMUNITY",
     "category": "Education",
 }
