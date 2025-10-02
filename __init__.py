@@ -38,7 +38,8 @@ import bpy
 
 
 classes = [
-    example_module.ExamplePanel,
+    example_module.ConfiguratorPanel,
+    example_module.CycleItemsOP
 ]
 
 
