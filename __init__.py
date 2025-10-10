@@ -39,6 +39,7 @@ import bpy
 
 classes = [
     example_module.ExamplePanel,
+    example_module.RenameActiveObjectOP,
 ]
 
 
